@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar.js";
+import Formulario from "./components/Formulario.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="container mt-4">
+        <h1 className="text-center mb-4">Formulario con Validación</h1>
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <Formulario />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
